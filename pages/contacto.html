@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" style="background-color: #b47cff;">
+            <div class="container-fluid">
+              <span class="navbar-text">
+                Información de contacto y redes
+              </span>
+            </div>
+          </nav>
+          <nav class="navbar navbar-expand-lg" style="background-color: #7c4dff">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html"><img src="/assets/Logo.png" alt="" width="75px" height="75px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/biografia.html">Biografía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/eventos.html">Eventos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/pages/redes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Redes
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.facebook.com/VanzIF/">Facebook</a></li>
+                      <li><a class="dropdown-item" href="https://www.instagram.com/VanzIF/">Instagram</a></li>
+                      <li><a class="dropdown-item" href="https://twitter.com/Vanz_IF">Twitter</a></li>
+                      <li><a class="dropdown-item" href="https://www.youtube.com/c/VanzIF">Youtube</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+        <h1>Contacto</h1>
+        <br>
+    </header>
+    <main class="container">
+        <section class="section">
+            <form action="">
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+                <div>
+                    <label for="name">Escribe tu nombre</label>
+                    <input type="text" name="name" placeholder="Juan Martin">
+                </div>
+                <br>
+                <div>
+                    <label for="apellido">Escribe tu apellido</label>
+                    <input type="text" name="apellido" placeholder="Perez">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Escribe tu direccion de correo *</label>
+                    <input type="email" name="email" placeholder="xxxx@company.com" required>
+                </div>
+                <br>
+                <div>
+                    <label for="comentarios">Escribe tu opinion o consulta</label>
+                    <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="terminos">Acepta términos y condiciones</label>
+                    <input type="checkbox" name="terminos" value="1">
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Enviar datos">
+                </div>
+            </fieldset>
+            </form>
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/assets/Logo.png" alt="Logo VanzIF" width="50px" height="50px">© Vanz IF 2022
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, tempora.</p>
+            </div>
+        </div>
+	</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
