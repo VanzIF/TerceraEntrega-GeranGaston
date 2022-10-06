@@ -5,14 +5,111 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url(/assets/bg.jpg);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body .p {
+  width: 100%;
+  text-align: center;
+  color: antiquewhite;
+}
+body .carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: antiquewhite;
+  text-align: center;
+  z-index: 10;
+}
+body .container {
+  color: antiquewhite;
+  background-image: url(/assets/bgfade.png);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body .row {
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  padding-left: 1.25rem;
+  color: antiquewhite;
+}
+body .row .column {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+body .row .img {
+  width: 100%;
+  margin-top: 5px;
+  flex: 50%;
+  padding: 5px;
+}
+
+#form {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: solid 1px;
+  position: fixed;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: antiquewhite;
+  background-image: url(/assets/bgfade.png);
+  background-size: auto;
+  box-shadow: 0px 35px 44px -22px rgba(0, 0, 0, 0.72);
+  transition: 0.2s;
 }
 
 footer {
-  margin: 0;
-  padding: 0;
+  width: 100%;
   box-sizing: border-box;
+}
+footer .redes-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: hsl(22deg, 100%, 74%);
+  padding: 15px 10px;
+}
+footer .redes-container ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+footer .redes-container ul li a {
+  font-size: 35px;
+  padding: 0 10px;
+  background-color: #333;
+  color: #fff;
+  line-height: 50px;
+  transition: all 0.5s ease;
+}
+footer .redes-container ul li :hover a {
+  filter: blur(2px);
+  transform: translateY(-3px) scale 1.05;
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+footer .redes-container ul li .footer-col {
+  display: flex;
+  align-items: flex-end;
+}
+
+:root {
+  --facebook: #3b5999;
+  --instagram: #e4405f;
+  --twitter: #55acee;
+  --youtube: #bd081c;
 }/*# sourceMappingURL=estilo.css.map */
