@@ -28,28 +28,26 @@ body{
             text-align: center;
             z-index: 10;
         }
-
         .container{
             color: antiquewhite;
             background-image: url(/assets/bgfade.png);
 
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: justify;
         }
 
-        .row{
+            .row{
             width: 100%;
             height: 100%;
             padding: 0%;
             padding-left: 1.25rem;
             color: antiquewhite;
-
-            .column{
-                    display: flex;
-                    padding: 5px;
-                    flex-wrap: wrap;
             }
 
             .img{
+                    display: grid;
+                    grid-gap: 50px;
+                    text-align: justify;
                     width: 100%;
                     margin-top: 5px;
                     flex: 50%;
@@ -57,7 +55,6 @@ body{
             }
 
         }
-}
 #form{
             width: 50%;
             margin: 0 auto;
@@ -76,6 +73,8 @@ body{
 }
 footer{
     width: 100%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 
         .redes-container{
@@ -88,39 +87,34 @@ footer{
 
             padding: 15px 10px;
 
-            ul{    
+            ul{
                 li{
                     display: inline-block;
-                    margin: 0 5px;
+
                     width: 50px;
                     height: 50px;
                     text-align: center;
                         a{
                             font-size: 35px;
                             padding: 0 10px;
-                            background-color: #333;
                             color: #fff;
                             line-height: 50px;
-                            transition: all .5s ease;
-                        }
-                        :hover a{
+                            }
+                        a :hover{
                         filter: blur(2px);
                         transform: translateY(-3px) scale (1.05);
                         box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
                         filter: none;
                         }
-        .footer-col{
-            display: flex;
-            align-items: flex-end;
-
-                        }
+                    }
                 }
-            }
+        .logo-container{
+            position: relative;
+            float: right;
+            top: -75px;
+            list-style-type: none;
+            float: right;
+            padding: 0 50px;
         }
-}
-:root{
-    --facebook: #3b5999;
-    --instagram: #e4405f;
-    --twitter: #55acee;
-    --youtube: #bd081c;
+    }
 }
