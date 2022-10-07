@@ -30,17 +30,25 @@ body .carousel-caption {
   z-index: 10;
 }
 body .container {
+  width: 100%;
+  display: grid;
+  grid-gap: 50px;
+  text-align: center;
   color: antiquewhite;
   background-image: url(/assets/bgfade.png);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: justify;
 }
 body .row {
+  display: flex;
   width: 100%;
   height: 100%;
   padding: 0%;
   padding-left: 1.25rem;
   color: antiquewhite;
+}
+body .row :hover img {
+  border: 5px solid #f7f7f7;
 }
 body .img {
   display: grid;
@@ -50,6 +58,10 @@ body .img {
   margin-top: 5px;
   flex: 50%;
   padding: 5px;
+}
+
+#indexbanner {
+  display: flex;
 }
 
 #form {
@@ -97,7 +109,7 @@ footer .redes-container ul li a {
 footer .redes-container ul li a :hover {
   filter: blur(2px);
   transform: translateY(-3px) scale 1.05;
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  border: 5px solid #f7f7f7;
   filter: none;
 }
 footer .redes-container .logo-container {
